@@ -3,5 +3,6 @@
 //An abstract `getBreed` method that returns a string.
 //A constructor allowing me to provide a name, description, and price.
 
-public class Dog {
+public abstract class Dog implements AdoptableAnimal {
+    abstract void getBreed();
 }
