@@ -5,8 +5,8 @@ public class Main {
         AdoptableAnimal[] animals = new AdoptableAnimal[] {
                 new Cat("Billy", "He sucks", 200000),
                 new Cat("Not Billy", "Way better than billy", 2),
-                new GoldenRetriever("Jimbo", "Wow!", 200),
-                new Pitbull("Rough", "The best", 20)
+                new GreatPyrenees("Jimbo", "Wow!", 200),
+                new AnatolianShepherd("Rough", "The best", 20)
         };
 
         for (AdoptableAnimal animal : animals) {

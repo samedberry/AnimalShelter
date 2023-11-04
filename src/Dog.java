@@ -1,8 +1,19 @@
-//It should implement the `AdoptableAnimal` interface.
-//Unlike Cat, you can choose to not `@Override` the underlying methods here and instead do that in the concrete child classes.
-//An abstract `getBreed` method that returns a string.
-//A constructor allowing me to provide a name, description, and price.
-
 public abstract class Dog implements AdoptableAnimal {
-    abstract void getBreed();
+    protected String name;
+    protected String description;
+    protected double price;
+
+    public Dog() {
+        this.name = "No Name";
+        this.description = "No Description";
+        this.price = 0.00;
+    }
+
+    public Dog(String name, String description, double price) {
+        this.name = name;
+        this.description = description;
+        this.price = price;
+    }
+
+    abstract String getBreed();
 }
